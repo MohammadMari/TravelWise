@@ -1,0 +1,28 @@
+.navbar-logo {
+  cursor: pointer;
+  width: 100px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  color: #545454;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:active {
+  color: black;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.navitem-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}

@@ -1,27 +1,25 @@
 import React from "react";
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import { NavLink as Link } from "react-router-dom";
+
 import logo from "../../assets/logo.png";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
     <>
-      <Nav>
-        <img src={logo} alt="logo" />
-        <NavMenu>
-          <NavLink to="/" activeStyle>
-            Home
-          </NavLink>
-          <NavLink to="/about" activeStyle>
-            About
-          </NavLink>
-          <NavLink to="/contact" activeStyle>
-            Contact Us
-          </NavLink>
-          <NavLink to="/blogs" activeStyle>
-            Blogs
-          </NavLink>
-        </NavMenu>
-      </Nav>
+      <div className="navbar">
+        <Link className="link" to="/" activeStyle>
+          <img className="navbar-logo" src={logo} alt="logo" />
+        </Link>
+        <div className="navitem-container ">
+          <Link className="link" to="/travel" activeStyle>
+            Travel
+          </Link>
+          <Link className="link" to="/lounging" activeStyle>
+            Lounging
+          </Link>
+        </div>
+      </div>
     </>
   );
 };
