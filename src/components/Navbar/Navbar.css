@@ -11,14 +11,18 @@
   cursor: pointer;
 }
 
-.link:active {
+.active {
+  font-weight: bold;
   color: black;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 10px 20px;
+  border-bottom: 1px solid #979797;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .navitem-container {
