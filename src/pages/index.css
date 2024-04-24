@@ -6,6 +6,15 @@
   height: auto;
 }
 
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
 :root {
   --red: #b00;
   --blue: #00b;

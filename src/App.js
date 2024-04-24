@@ -1,6 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/navbar/navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.css";
 
 import Home from "./pages";
 import Lounging from "./pages/lounging";
